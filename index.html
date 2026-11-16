@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>المراعي | بروتين ماكس</title>
+  <meta name="description" content="استكشف حضور منتج بروتين ماكس في جميع الفروع المختلفة.">
+  <meta name="theme-color" content="#08070B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="المراعي – الصفحة الرئيسية">
+        <span class="brand-name">المراعي</span>
+        <span class="brand-sub">بروتين ماكس</span>
+      </a>
+      <nav class="site-nav" aria-label="التنقل الرئيسي">
+        <a href="#branches">الفروع</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="view">
+      <div class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow hero-anim d1">منتج جديد من المراعي</p>
+            <h1 class="hero-title hero-anim d2">بروتين ماكس<span>في فروعنا</span></h1>
+            <p class="hero-sub hero-anim d3">تعرّف على حضور بروتين ماكس في مختلف فروع الأسكندرية، وشاهد عروض المنتج كما تظهر على أرفف نقاط البيع.</p>
+            <a class="btn btn-primary hero-anim d4" href="#branches">استكشف الفروع</a>
+          </div>
+          <div class="hero-visual hero-anim d2">
+            <figure class="hero-frame" id="heroFrame">
+              
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <section id="branches" class="branches" aria-labelledby="branchesTitle">
+        <div class="container">
+          <header class="section-head">
+            <h2 id="branchesTitle">اختر الفرع</h2>
+            <p>صور حقيقية لعرض المنتج في كل فرع.</p>
+          </header>
+          <div id="branchGrid" class="branch-grid"></div>
+        </div>
+      </section>
+    </section>
+
+    <section id="branch" class="view branch-view" hidden>
+      <div class="container">
+        <a class="back-btn" href="#branches">العودة إلى الفروع</a>
+        <header class="branch-head">
+          <h1 id="branchTitle" tabindex="-1"></h1>
+          <p id="branchDesc" class="branch-desc"></p>
+          <p id="branchCount" class="branch-count"></p>
+        </header>
+        <div id="galleryGrid" class="gallery"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year"></span> المراعي. جميع الحقوق محفوظة.</span>
+      <span class="creator-credit">Designed &amp; developed by <strong>Malak Elgwaely</strong></span>
+    </div>
+  </footer>
+
+  <dialog id="lightbox" class="lightbox" aria-label="عرض الصورة بملء الشاشة">
+    <button class="lb-close" id="lbClose" type="button" aria-label="إغلاق">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button class="lb-nav lb-prev" id="lbPrev" type="button" aria-label="الصورة السابقة">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+    <button class="lb-nav lb-next" id="lbNext" type="button" aria-label="الصورة التالية">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <figure class="lb-stage">
+      <img id="lbImg" alt="">
+      <figcaption id="lbCaption" class="lb-caption"></figcaption>
+    </figure>
+    <div id="lbCounter" class="lb-counter"></div>
+  </dialog>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
